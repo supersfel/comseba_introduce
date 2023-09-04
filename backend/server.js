@@ -21,6 +21,7 @@ const port = 80;
 //url의 포트를 설정
 
 app.get("/", (req, res) => {
+  console.log(__dirname);
   res.sendFile(__dirname + "/frontend/src/html/home.html");
   //메인 페이지가 들어오는 경우 home과 연결
 });
